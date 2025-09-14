@@ -1,0 +1,31 @@
+/* static/style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat-bubble {
+    max-width: 75%;
+    padding: 12px 18px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.user-bubble {
+    background-color: #007bff; /* Blue */
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.ai-bubble {
+    background-color: #334155; /* Slate-700 from Tailwind */
+    color: white;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+}

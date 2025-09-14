@@ -1,0 +1,34 @@
+# Open-Source AI Assistant
+
+This is a fully functional, open-source AI assistant designed to be run locally. It features conversational chat, voice interaction, memory, and powerful automation tools. It's built with Python (FastAPI), a vanilla JS frontend, and can be powered by leading open-source LLMs like LLaMA 3 or Mixtral.
+
+## ✅ Features
+
+- **Conversational Chat**: A clean, ChatGPT-like interface for text-based interaction.
+- **Voice Interaction**: Use your microphone for speech-to-text input and hear the AI's responses with text-to-speech output.
+- **Personalized Memory**: The assistant knows its owner (Ayush Mondal by default) and remembers conversation history and preferences in a local SQLite database.
+- **Power Tools**:
+    - **Live Information**: Can fetch real-time data like weather using API calls.
+    - **Automation**: Schedule reminders and tasks.
+- **Customizable Personality**: Switch between helpful, formal, and casual tones.
+- **Open-Source & Expandable**: Built with a modular structure that's easy to modify and extend.
+- **Docker-Ready**: Includes a `Dockerfile` for easy, containerized deployment.
+
+## 🛠️ Tech Stack
+
+- **Backend**: Python 3.10+ with FastAPI
+- **Frontend**: HTML, Tailwind CSS (via CDN), Vanilla JavaScript
+- **LLM Engine**: `llama-cpp-python` for efficient local inference (LLaMA 3, Mixtral, etc.)
+- **Database**: SQLite 3
+- **Voice**: Vosk (STT) and CoquiTTS (TTS)
+- **Scheduler**: APScheduler
+
+## 🚀 Local Setup and Installation
+
+Follow these steps to get your AI assistant running on your local machine.
+
+### Step 1: Clone the Repository
+
+```bash
+git clone <your-repo-url>
+cd AI_ASSISTANT

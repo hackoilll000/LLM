@@ -1,0 +1,21 @@
+AI_ASSISTANT/
+├── core/
+│   ├── __init__.py
+│   ├── llm.py              # Handles LLM interaction (LLaMA 3, Mixtral)
+│   ├── memory.py           # Manages conversation history and user preferences
+│   └── tools.py            # Defines functions the AI can use (weather, reminders)
+├── services/
+│   ├── __init__.py
+│   ├── automation.py       # Manages the scheduler for reminders
+│   └── voice_utils.py      # Handles Speech-to-Text and Text-to-Speech
+├── static/
+│   ├── index.html          # Main web interface
+│   ├── script.js           # Frontend logic for chat and voice
+│   └── style.css           # Custom styles for the UI
+├── .env.example            # Example for environment variables (API keys)
+├── .gitignore              # Files to be ignored by Git
+├── app.py                  # Main FastAPI backend server
+├── Dockerfile              # For containerized deployment
+├── LICENSE                 # MIT License file
+├── README.md               # Full documentation and setup guide
+└── requirements.txt        # Python dependencies

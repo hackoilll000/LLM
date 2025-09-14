@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col h-screen">
+
+    <header class="bg-gray-800 p-4 shadow-md">
+        <h1 class="text-xl font-bold text-center">Open-Source AI Assistant</h1>
+    </header>
+
+    <main id="chat-container" class="flex-1 p-4 overflow-y-auto">
+        <!-- Chat messages will be appended here -->
+    </main>
+
+    <footer class="bg-gray-800 p-4">
+        <div class="flex items-center space-x-2">
+            <button id="mic-button" class="bg-blue-600 hover:bg-blue-700 p-3 rounded-full text-white">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <input type="text" id="chat-input" class="flex-1 bg-gray-700 rounded-full p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type or say something...">
+            <button id="send-button" class="bg-green-600 hover:bg-green-700 p-3 rounded-full text-white">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+            <button id="tts-toggle" class="bg-gray-600 hover:bg-gray-500 p-3 rounded-full text-white" title="Toggle Speech Output">
+                <i id="tts-icon" class="fas fa-volume-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
